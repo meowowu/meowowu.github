@@ -1,0 +1,328 @@
+/*---按鈕---*/
+
+@media screen and (max-width:1080px) {
+    .search {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .Newen {
+        font-size: 10px;
+        line-height: 0.5;
+    }
+    
+/*
+    .nav {
+        width: 768px;
+    }
+*/
+
+    /*-漢堡選單-*/
+    .box {
+        background: #000;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .menu-btn {
+        width: 64px;
+        height: 64px;
+        background: #fff;
+        position: fixed;
+        top: 2%;
+        right: 0;
+        padding-top: 10px;
+        box-sizing: border-box;
+        z-index: 1;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .menu-btn span {
+        width: 60%;
+        height: 2px;
+        background: dimgray;
+        display: block;
+        margin: 10px auto;
+        z-index: 3;
+    }
+
+    .menu-box {
+        width: 40%;
+        height: 100vh;
+        background: #FFF;
+        position: fixed;
+        top: 0;
+        right: -40%;
+        transition: all .3s;
+        z-index: 2;
+        padding: 80px 20px 20px 20px;
+        ;
+    }
+
+    .menu-box a {
+        font-size: 20px;
+        color: dimgray;
+        font-family: inherit;
+        line-height: 2;
+        z-index: 2;
+    }
+
+    /*-漢堡選單-*/
+}
+
+/*-漢堡選單範圍-*/
+
+.menu-box.active {
+    right: 0 !important;
+}
+
+.menu-btn.active span:first-child {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.menu-btn.active span:last-child {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+/*-漢堡選單範圍-*/
+
+
+/*-header範圍-*/
+
+/*
+img {
+    max-width: 100%;
+    height: auto;
+}
+*/
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 80px;
+}
+
+.logo {
+    position: fixed;
+    padding: 5px;
+    left: 5%;
+}
+
+.search {
+    height: 100px;
+    width: 300px;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 1;
+
+}
+
+.header {
+    position: fixed;
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    padding: 20px 100px 20px 20px;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+
+.menu {
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.menu a {
+    color: #666;
+    font-weight: normal;
+    margin: 20px 15px;
+    padding: 20px 15px;
+}
+
+
+/*---按鈕----*/
+
+/*----shop----*/
+
+.nav {
+    margin: 0 auto;
+    padding: 120px 0px 0px 0px;
+}
+
+.big2w {
+    background-color: bisque;
+    width: 350px;
+    height: 385px;
+    font-size: 25px;
+    text-align: center;
+    color: #666;
+    padding: 90px 20px;
+    font-family: monospace;
+}
+
+.ourwine {
+    padding: 30px 20px 60px 20px;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    color: dimgrey;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kon {
+    padding: 10px 50px 10px 20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    color: white;
+}
+
+.btn btn-primary {
+    background-color: black;
+}
+
+.Bottom {
+    text-align: center;
+    color: dimgray;
+}
+/*
+.big2 {
+    display: block;
+    transition-duration: 1s;
+
+}
+
+.big2w {
+    background-color: bisque;
+    width: 350px;
+    height: 383px;
+    position: absolute;
+    top: 222px;
+    left: 220px;
+    font-size: 26px;
+    text-align: center;
+    padding: 90px 20px;
+    color: #666;
+    font-family: inherit;
+
+}
+*/
+
+/*
+.big2:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+
+}
+*/
+
+.text2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    color: dimgrey;
+    position: absolute;
+    top: 670px;
+    left: 673px;
+}
+
+/*
+.pro1 {
+    position: absolute;
+    top: 800px;
+    left: 300px;
+}
+
+.pro2 {
+    position: absolute;
+    top: 800px;
+    left: 650px;
+}
+
+.pro3 {
+    position: absolute;
+    top: 800px;
+    left: 1000px;
+}
+
+.pro1:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    transition-duration: 1s;
+}
+
+.pro2:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    transition-duration: 1s;
+}
+
+.pro3:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    transition-duration: 1s;
+}
+
+.pro1t {
+    position: absolute;
+    top: 1090px;
+    left: 365px;
+    font-size: 26px;
+    color: darkslategrey;
+}
+
+.pro2t {
+    position: absolute;
+    top: 1090px;
+    left: 703px;
+    font-size: 26px;
+    color: darkslategrey;
+}
+
+.pro3t {
+    position: absolute;
+    top: 1090px;
+    left: 1030px;
+    font-size: 26px;
+    color: darkslategrey;
+}
+*/
+
+h4 {
+    text-align: center;
+    padding: 60px;
+    color: dimgrey;
+    font-size: 12pt;
+
+}
+
+.footer {
+    background-color: darkgray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+}

@@ -1,0 +1,217 @@
+/*----index----*/
+
+@media screen and (max-width:1080px) {
+    .search {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .Newen {
+        font-size: 10px;
+        line-height: 0.5;
+    }
+    
+    .bodyy {
+        position: relative;
+        right: 80px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    .write {
+        position: absolute;
+        top: 100px;
+    }
+    
+    .wine1 {
+        position: absolute;
+        top: 100px;
+    }
+
+
+    /*-漢堡選單-*/
+    .box {
+        background: #000;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .menu-btn {
+        width: 64px;
+        height: 64px;
+        background: #fff;
+        position: fixed;
+        top: 2%;
+        right: 0;
+        padding-top: 10px;
+        box-sizing: border-box;
+        z-index: 1;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .menu-btn span {
+        width: 60%;
+        height: 2px;
+        background: dimgray;
+        display: block;
+        margin: 10px auto;
+        z-index: 3;
+    }
+
+    .menu-box {
+        width: 40%;
+        height: 100vh;
+        background: #FFF;
+        position: fixed;
+        top: 0;
+        right: -40%;
+        transition: all .3s;
+        z-index: 2;
+        padding: 80px 20px 20px 20px;
+        ;
+    }
+
+    .menu-box a {
+        font-size: 20px;
+        color: dimgray;
+        font-family: inherit;
+        line-height: 2;
+        z-index: 2;
+    }
+
+    /*-漢堡選單-*/
+}
+
+/*-漢堡選單範圍-*/
+
+.menu-box.active {
+    right: 0 !important;
+}
+
+.menu-btn.active span:first-child {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.menu-btn.active span:last-child {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+/*-漢堡選單範圍-*/
+
+
+/*-header範圍-*/
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 80px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    position: fixed;
+    padding: 5px;
+    left: 5%;
+}
+
+.search {
+    height: 100px;
+    width: 300px;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 1;
+
+}
+
+.header {
+    position: fixed;
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    padding: 20px 100px 20px 20px;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+
+.menu {
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.menu a {
+    color: #666;
+    font-weight: normal;
+    margin: 20px 15px;
+    padding: 20px 15px;
+}
+
+.col {
+    padding: 0px 0px 0px 85px;
+}
+
+.col-5 {
+    padding: 0px 30px 0px 30px;
+}
+
+.wine1 {
+    padding: 100px 0px 0px 0px;
+}
+
+h4 {
+    text-align: center;
+    padding: 60px;
+    color: dimgrey;
+    font-size: 12pt;
+
+}
+
+.write {
+    padding: 100px;
+    color: dimgrey
+}
+
+
+h5 {
+    line-height: 2;
+    font-size: 12pt;
+}
+
+
+.footer {
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+}
+
+/*----index----*/
